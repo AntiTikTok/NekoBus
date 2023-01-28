@@ -78,7 +78,6 @@ public class NekoBus {
                     // reference check
                     boolean equals = listener.instance == target;
                     if (equals && listener.method.equals(method)) {
-                        System.out.println(method.getName());
                         listeners.remove(ii);
                     }
                 }

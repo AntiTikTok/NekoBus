@@ -50,9 +50,6 @@ public class NekoBus {
                 throw new IllegalClassException("Parameters must be one");
 
             Type type = method.getGenericParameterTypes()[0];
-            if (type.equals(NekoEvent.class))
-                throw new IllegalArgumentException("Parameter must be extends \"NekoEvent\"");
-
             Listener listener = new Listener(target, method);
             HashMap<Type, List<Listener>> types = this.listeners.get(annotation.priority());
             if (!types.containsKey(type))

@@ -1,6 +1,8 @@
 package com.antitiktok.nekobus.test;
 
 import com.antitiktok.nekobus.NekoBus;
+import com.antitiktok.nekobus.NekoEvent;
+import com.antitiktok.nekobus.type.Priority;
 import com.antitiktok.nekobus.type.ReceiveEvent;
 
 public class Main {
